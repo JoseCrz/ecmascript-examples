@@ -34,10 +34,22 @@ function greet({name, lastname}) {
 greet(beatle)
 
 // * Spread Operator
-
 const nintendoGames = ['The Legend of Zelda', 'Metroid Prime', 'Super Smash Bros']
 const playstationGames = ['Bloodborne', 'Uncharted', 'The Last of Us']
 
 const greatGames = ['Cuphead', ...nintendoGames, ...playstationGames]
 
 console.log(greatGames)
+
+// * Object Assignation
+const title = 'The Dark Knight Rises'
+const director = 'Christopher Nolan'
+const score = 100
+
+const movie = {
+    title,
+    director,
+    score
+}
+
+console.log(movie)
