@@ -1,0 +1,29 @@
+{
+  "name": "ecmascript",
+  "version": "1.0.0",
+  "description": "Examples of ECMAScript features",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseCrz/ecmascript-examples.git"
+  },
+  "keywords": [
+    "ES6",
+    "ES7",
+    "ES8",
+    "ES9",
+    "ECMA",
+    "ECMAScript",
+    "JS",
+    "JavaScript"
+  ],
+  "author": "Jose Cuevas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoseCrz/ecmascript-examples/issues"
+  },
+  "homepage": "https://github.com/JoseCrz/ecmascript-examples#readme"
+}
