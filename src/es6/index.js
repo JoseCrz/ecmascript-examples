@@ -18,3 +18,17 @@ const song = `Eleanor Rigby, picks up the rice in a church where a wedding has b
 lives in a dream.
 `
 console.log(song)
+
+// * Object Destructuring
+const beatle = {
+    name: 'Paul',
+    lastname: 'McCartney',
+    instrument: 'Bass',
+    age: 73
+}
+
+function greet({name, lastname}) {
+    console.log(`ladies and gentleman, ${name} ${lastname}`)
+}  
+
+greet(beatle)
