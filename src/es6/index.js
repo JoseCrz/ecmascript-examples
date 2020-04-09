@@ -107,7 +107,6 @@ callDB()
 })
 
 // * Classes (syntactic sugar)
-
 class Pokemon {
     constructor (name, type, hp, atk) {
         this.name = name
@@ -139,3 +138,7 @@ sceptile.greet()
 sceptile.receiveAttack(100)
 sceptile.attack()
 sceptile.attack('Grass')
+
+// * Modules
+import { sing } from './es6Module'
+sing()
