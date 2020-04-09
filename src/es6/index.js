@@ -55,7 +55,6 @@ const movie = {
 console.log(movie)
 
 // * Arrow Functions
-
 const myFunction = (value1, value2, value3) => {
     console.log(value1, value1, value3)
 }
@@ -79,3 +78,30 @@ const names = people.map(person => person.name)
 console.log(names)
 
 const square = num => num ** 2
+
+// * Promises
+const callDB = connection => {
+    return new Promise((resolve, reject) => {
+        if (connection) {
+            resolve('HERE IS SOME DATA')
+        } else {
+            reject('NO CONNECTION')
+        }
+    })
+}
+
+callDB('connection')
+.then(data => {
+    console.log(data)
+})
+.catch(error => {
+    console.log(error)
+})
+
+callDB()
+.then(data => {
+    console.log(data)
+})
+.catch(error => {
+    console.log(error)
+})
