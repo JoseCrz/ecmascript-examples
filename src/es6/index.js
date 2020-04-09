@@ -53,3 +53,29 @@ const movie = {
 }
 
 console.log(movie)
+
+// * Arrow Functions
+
+const myFunction = (value1, value2, value3) => {
+    console.log(value1, value1, value3)
+}
+
+const people = [
+    {
+        name: 'Jose',
+        age: 24
+    },
+    {
+        name: 'Eduardo',
+        age: 22
+    },
+    {
+        name: 'Memo',
+        age: 34
+    }
+]
+
+const names = people.map(person => person.name)
+console.log(names)
+
+const square = num => num ** 2
