@@ -32,3 +32,12 @@ function greet({name, lastname}) {
 }  
 
 greet(beatle)
+
+// * Spread Operator
+
+const nintendoGames = ['The Legend of Zelda', 'Metroid Prime', 'Super Smash Bros']
+const playstationGames = ['Bloodborne', 'Uncharted', 'The Last of Us']
+
+const greatGames = ['Cuphead', ...nintendoGames, ...playstationGames]
+
+console.log(greatGames)
