@@ -105,3 +105,37 @@ callDB()
 .catch(error => {
     console.log(error)
 })
+
+// * Classes (syntactic sugar)
+
+class Pokemon {
+    constructor (name, type, hp, atk) {
+        this.name = name
+        this.type = type
+        this.hp = hp
+        this.atk = atk
+    }
+
+    greet() {
+        console.log(this.name)
+    }
+
+    receiveAttack(damage = 0) {
+        this.hp -= damage
+        console.log(this.hp)
+    }
+
+    attack(type = 'normal') {
+        if (type === this.type) {
+            console.log(this.atk * 2)
+        } else {
+            console.log(this.atk)
+        }
+    }
+}
+
+const sceptile = new Pokemon('Sceptile', 'Grass', '363', 100)
+sceptile.greet()
+sceptile.receiveAttack(100)
+sceptile.attack()
+sceptile.attack('Grass')
