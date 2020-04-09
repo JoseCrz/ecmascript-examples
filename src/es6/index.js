@@ -142,3 +142,19 @@ sceptile.attack('Grass')
 // * Modules
 import { sing } from './es6Module'
 sing()
+
+// * Generator Functions
+function* generatorHello () {
+    if (true) {
+        yield 'Mimi bebe'
+    }
+    if (true) {
+        yield 'Jojito'
+    }
+}
+
+const generatedHello = generatorHello()
+
+console.log(generatedHello.next().value)
+console.log(generatedHello.next().value)
+console.log(generatedHello.next().value)
