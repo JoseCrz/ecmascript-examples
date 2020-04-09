@@ -20,3 +20,16 @@ console.log(list)
 const phrase = 'hello'
 console.log(phrase.padStart( 7, 'hi'))
 console.log(phrase.padEnd( 12, '----'))
+
+// * Async - Await
+
+const callDB = willPass => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (willPass) {
+                resolve('Heres your data')
+            }
+            reject('Internal Server Error')
+        }, 3000)
+    })
+}
